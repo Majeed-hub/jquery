@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('logo.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <form action="site.php" method="post">
+        <label for="">Name :</label>
+         <input type="text" placeholder="E.g John"><br><br>
+
+        <label for="">Phone no :</label>
+        <input type="number" placeholder="Please enter you phone number"><br><br>
+
+        <label for="">Birth date :</label>
+        <input type="date"><br><br>
+
+        <label for="password">Password :</label>
+        <input type="password" id="password"><br><br>
+        
+        <label for="city">Select your city : </label>
+        <input list="city" >
+        <datalist id="city">
+            <option value="Banglore"></option>
+            <option value="Manglore"></option>
+            <option value="Mumbai"></option>
+            <option value="Goa"></option>
+        </datalist>
+        <br><br>
+        <label for="cars">Select your car : </label>
+        <select id="cars">
+            <option value="">--select--</option>
+            <option value="valvo">valvo</option>
+            <option value="BMW">BMW</option>
+            <option value="TOYOTA">TOYOTA</option>
+            <option value="Suzuki">Suzuki</option>
+
+        </select>
+    
+        <br><br>
+        <label for="">Are you an indian citizen?</label>
+        <input type="checkbox" name="isIndian" id=""><br><br>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">female</label> <br><br>
+
+        <input type="range" name="" id=""><br><br>
+        <label for="comments">comment : </label><br>
+        <textarea name="" id="" cols="30" rows="10" maxlength="255"></textarea>
+        <input type="submit">
+    </form>
+</body>
+</html>

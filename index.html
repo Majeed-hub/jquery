@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #element {
+            float: left;
+            overflow: hidden;
+            background: #f0e68c;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100vh;
+            z-index: -2;
+        }
+        button{
+            z-index: 1;
+           position: absolute;
+           top:6px;
+           left:6px;
+        }
+    
+        /* Add padding and border to inner content
+        for better animation effect */
+        #element-inner {
+            width: 100px;
+            margin: 25px 0;
+            /* border: 1px solid #a29415; */
+            padding: 0;
+            list-style-type: none;
+        }
+        .item{
+            padding: 4px;
+        }
+        .item:hover{
+            background-color: #b2a31c;
+        }
+    </style>
+</head>
+<body>
+   
+        <button>hide</button>
+    
+    <div id="element">
+        <ul id="element-inner">
+            <li class="item">testing</li>
+            <li class="item">testing</li>
+            <li class="item">testing</li>
+            <li class="item">testing</li>
+            <li class="item">testing</li>
+        </ul>
+    </div>
+</body>
+</html>
